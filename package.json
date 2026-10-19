@@ -1,0 +1,19 @@
+
+{
+  "name": "github-actions-greeting-action",
+  "version": "1.0.0",
+  "description": "Custom JavaScript GitHub Action for DevOps Assignment",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist",
+    "test": "node --check index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+
+name: "Custom Greeting Action"
+
+description: "A custom JavaScript GitHub Action that displays a greeting message"
+
+author: "MahboobRasheed"
+
+inputs:
+  name:
+    description: "Name of the person to greet"
+    required: true
+    default: "Student"
+
+  greeting:
+    description: "Greeting message"
+    required: false
+    default: "Hello"
+
+outputs:
+  message:
+    description: "The generated greeting message"
+
+runs:
+  using: "node24"
+  main: "dist/index.js"
